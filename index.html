@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Projetinho #002</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="">
+            <label for="matricula">Matrícula</label>
+            <input type="number" name="matricula" id="matricula" placeholder="Matrícula" pattern="[0-9]*">
+            <label for="data_admissao">Data de admissão</label>
+            <input type="month" name="data_admissao" id="data_admissao">
+            <input type="text" name="nome" id="nome" placeholder="Nome completo">
+            <input type="email" name="email" id="email" placeholder="E-mail">
+            <input type="number" name="phone" id="phone" placeholder="Telefone">
+            <label for="data_nascimento">Data de nascimento</label>
+            <input type="date" name="nascimento" id="nascimento">
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <!-- Opções de estados serão preenchidas dinamicamente via JavaScript -->
+            </select>
+
+            <label for="cidade">Cidade:</label>
+            <select name="cidade" id="cidade">
+                <!-- Opções de cidades serão preenchidas dinamicamente via JavaScript -->
+            </select>
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco" placeholder="Rua, N°. . .">
+            <input type="submit" value="Enviar">
+        </form>
+        <button id="dark-mode-button">Modo Escuro</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
